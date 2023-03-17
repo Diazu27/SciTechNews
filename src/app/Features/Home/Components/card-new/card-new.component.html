@@ -1,0 +1,23 @@
+<div class="cardNew" style="background-image: url({{post.imageUrl}});">
+    <div class="cardlayer">
+
+        <div class="contenCardBox">
+            <div class="MainContent">
+                <h2 class="cardTitle">{{post.title}}</h2>
+            </div>
+            <div class="cardRanking">
+                <div class="likesDiv">
+                    <div>
+                        <span class="material-symbols-outlined">chat_bubble</span>
+                        {{CommentCount}}
+                    </div>
+                    <div>
+                        <span class="material-symbols-outlined">thumb_up</span>   
+                        {{LikesCount}}
+                    </div>
+                </div>
+                <a class="seeMorecard" routerLink="post/{{post._id}}" >Ver más</a>
+            </div>
+        </div>
+    </div>
+</div>

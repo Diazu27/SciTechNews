@@ -1,0 +1,16 @@
+<div class="containerLogin">
+
+    <div class="loginBox">
+    
+        <h1>Inicio de sesión</h1>
+
+        <input type="email" [(ngModel)]="Email" placeholder="Email">
+        <input type="password" [(ngModel)]="Password" placeholder="Password">
+
+        <span class="ErrorAlert" [style.display]="isLogged ? 'block' : 'none'">*Los datos son incorrectos</span> 
+        
+        <button (click)="handleLogin()" >Inicio</button>
+
+    </div>
+
+</div>

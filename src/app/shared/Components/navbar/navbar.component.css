@@ -1,0 +1,74 @@
+.navBar{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.navBar h1{
+    font-size: 1.2rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.NavUser{
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+.Userimg{
+    background-image: url("https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg");
+    background-position: center;
+    background-size: cover;
+    margin-right: 10px;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    border: 2px solid #3DFAFF;
+}
+
+.NavUser h6{
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.navBarContainer{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    justify-content: space-between;
+}
+
+.NavOptionBox{
+    display: flex;
+    align-items: center;
+}
+.NavOptionBox i{
+    color: #ffffff;
+}
+
+.btn{
+    margin:5px;
+    padding: .2rem 1.5rem;
+    font-weight: 800;
+    font-size: .875rem;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+
+.primary{
+    background-color:#3DFAFF;
+    color:black;
+}
+
+.secondary{
+    background-color:#ffffff;
+    color:black;
+}
+
+span{
+    color:#3DFAFF;
+    margin: 0px 10px;
+    cursor: pointer;
+}

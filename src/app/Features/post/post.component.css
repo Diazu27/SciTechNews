@@ -1,0 +1,86 @@
+
+.imagePostBanner{
+    background-color: #051121;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    border-radius: 1rem;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.postHeader{
+    margin-top: 30px;
+}
+
+.likeBox{
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+}
+
+.likeBox p{
+    margin:0px 10px;
+}
+
+.commentBox{
+    margin-top: 5rem;
+}
+
+
+.NewComment{
+    width: 100%;
+    margin: 20px 0px;
+    padding: 20px;
+    border-radius: 2rem;
+    color: black;
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: #3DFAFF;
+    justify-content: center;
+}
+
+.CommentForm{
+    margin: 40px 0px;
+    display: none;
+}
+
+
+textarea{
+    background-color: rgb(25, 25, 39);
+    height: 20vh;
+    border: none;
+    color: white;
+    padding: 10px;
+}
+
+textarea:focus{
+    background-color: rgb(25, 25, 39);
+    color: white;
+}
+
+button{
+    color: black;
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: #3DFAFF;
+}
+
+span{
+    cursor: pointer;
+}
+
+.likeIcon{
+    display: flex;
+}
+
+.Liked{
+    display: flex;
+    padding: 10px 20px;
+    background-color: #3DFAFF;
+    color: #051121;
+    font-weight: 800;
+    border-radius: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}

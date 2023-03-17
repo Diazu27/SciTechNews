@@ -1,0 +1,47 @@
+
+<div class="container">
+    
+    <div class="postHeader">
+        <h1>{{postData.title}}</h1>
+        <div class="likeBox">
+           <div class="likeIcon" [ngClass]="{'Liked': isLiked}" (click)="likePost()">
+              <span class="material-symbols-outlined">
+                thumb_up
+            </span>
+            <p>{{LikesCount}}</p>
+           </div>
+            <span class="material-symbols-outlined">
+                chat
+            </span>
+            <p>{{CommentCount}}</p>
+            <span class="material-symbols-outlined">
+                calendar_month
+            </span>
+            <p>{{postData.postDate}}</p>
+        </div>
+    </div>
+
+    <div class="imagePostBanner" style="background-image: url({{postData.imageUrl}});"></div>
+
+    <p class="PostContent">{{postData.content}}</p>
+
+
+   <div class="commentBox">
+         <h2>Comentarios</h2>
+        <app-comment *ngFor="let comment of Comments" [comment]="comment"></app-comment>
+   </div>
+
+   <button class="NewComment" (click)="OpenformComent()" [style.display]="userDataLogged != null ? 'flex' : 'none'">Agregar nuevo Comentario</button>
+
+   <div class="CommentForm" [style.display]="isCommentFormOpen ? 'block' : 'none'">
+    <fieldset>
+      <legend>¿Algo que opinar? deja un commentario</legend>
+      <div class="mb-3">
+        <textarea class="form-control" #CommentContent></textarea>
+      </div>
+      <button class="btn btn-primary" (click)="sendComment(CommentContent.value)">Commentar</button>
+    </fieldset>
+  </div>
+
+</div>
+

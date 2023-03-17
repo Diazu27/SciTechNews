@@ -1,0 +1,22 @@
+<nav class="navBar">
+    <div class="navBarContainer">
+        <h1 routerLink="/">Hecho por Andrés</h1>
+        <div class="NavOptionBox"  [style.display]="isLogged ? 'flex' : 'none'">
+            <div class="NavUser">
+               <div class="Userimg" style="background-image: url({{userData.avatarUrl}});"></div>
+               <div>
+                <h6>{{userData.name}} {{userData.lastname}}</h6>
+               </div>
+            </div>
+            <!--<a class="btn primary">Revisar</a>-->
+            <a class="btn secondary" routerLink="publish">Publicar</a>
+            <span class="material-symbols-outlined" (click)="logOut()">
+                logout
+            </span>
+        </div>
+
+        <div class="NavOptionBox" [style.display]="!isLogged ? 'flex' : 'none'">
+            <a class="btn secondary" routerLink="login">Inicio Sesión</a>
+        </div>        
+    </div>
+</nav>

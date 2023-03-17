@@ -1,1 +1,58 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #010914;
+    color: white;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1{
+    color: white;
+    font-weight: 800;
+}
+
+textarea{
+    background-color: rgb(25, 25, 39) !important;
+    border: none !important;
+    color: white !important;
+    padding: 10px !important;
+}
+
+input{
+    background-color: rgb(25, 25, 39) !important;
+    color: white !important;
+    border: none !important;
+}
+
+textarea:focus{
+    background-color: rgb(25, 25, 39) !important;
+    color: white !important;
+}
+
+button{
+    color: black !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+    background-color: #3DFAFF !important;
+}
+
+a{
+    color: black !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+    background-color: #3DFAFF !important;
+    text-decoration: none;
+}
+
+select{
+    background-color: rgb(25, 25, 39) !important;
+    color: white !important;
+    border: none !important;
+}

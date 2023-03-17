@@ -1,0 +1,40 @@
+<div class="container">
+    <h1>¡Vamos a publicar!</h1>
+
+    <form class="mt-5">
+        <div class="mb-3">
+            <h5>Título</h5>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  [(ngModel)]="Title" name="Title">
+        </div>
+        <div class="mb-3">
+            <h5>Agrega una imagen llamativa</h5>
+            <div class="input-group">
+                <span class="input-group-text" id="basic-addon3">www</span>
+                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"  [(ngModel)]="ImageUrl" name="ImageUrl">
+            </div>
+        </div>
+        <div class="mb-3">
+            <h5>Contenido</h5>
+            <textarea type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" [(ngModel)]="content" name="content"></textarea>
+        </div>
+
+        <div class="mb-3">
+            <h5>Categoría</h5>
+            <select aria-placeholder="Seleccione una categoría" class="form-select" aria-label="Default select example" [(ngModel)]="Category" name="Category">
+                <option *ngFor="let category of Categories" value="{{category._id}}">{{category.CategoryName}}</option>
+        
+              </select>
+        </div>
+
+        <button class="btn" (click)="submitPost()">¡Publicar!</button>
+    </form>
+
+</div>
+
+<div class="modalSuccess" [style.display]="isSuccessful ? 'flex' : 'none'">
+    <div class="modalBox">
+        <img src="https://cdn.dribbble.com/users/1751799/screenshots/5512482/media/7d97855e253a86edc1383557c28412bc.gif" alt="">
+        <h1>¡Listo! Publicado</h1>
+        <button routerLink="/">Inicio</button>
+    </div>
+</div>
